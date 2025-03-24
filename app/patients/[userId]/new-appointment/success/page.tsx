@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Doctors } from "@/constants";
 import { getAppointment } from "@/lib/actions/appointment.actions";
 import { formatDateTime } from "@/lib/utils";
+import CopilotFAB from "@/components/CopilotFAB";
 
 const RequestSuccess = async ({
   searchParams,
@@ -72,7 +73,7 @@ const RequestSuccess = async ({
             New Appointment
           </Link>
         </Button>
-
+        <CopilotFAB />
         <p className="copyright">© 2024 CarePluse</p>
       </div>
     </div>

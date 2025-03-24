@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { AppointmentForm } from "@/components/forms/AppointmentForm";
 import { getPatient } from "@/lib/actions/patient.actions";
+import CopilotFAB from "@/components/CopilotFAB";
 
 const Appointment = async ({ params: { userId } }: SearchParamProps) => {
   const patient = await getPatient(userId);
@@ -23,7 +24,7 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             userId={userId}
             type="create"
           />
-
+          <CopilotFAB />
           <p className="copyright mt-10 py-12">© 2024 CarePluse</p>
         </div>
       </section>
