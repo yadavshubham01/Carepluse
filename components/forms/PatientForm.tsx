@@ -13,6 +13,7 @@ import { UserFormValidation } from "@/lib/validation";
 import "react-phone-number-input/style.css";
 import CustomFormField, { FormFieldType } from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
+import CopilotFAB from "../CopilotFAB";
 
 export const PatientForm = () => {
   const router = useRouter();
@@ -87,6 +88,7 @@ export const PatientForm = () => {
 
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
       </form>
+      <CopilotFAB />
     </Form>
   );
 };

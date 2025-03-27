@@ -82,7 +82,7 @@ export default function CopilotFAB() {
   return (
     <div className="fixed bottom-4 right-4 flex flex-col items-end">
       {open && (
-        <Card className="w-[26rem] h-[34rem] shadow-xl border p-4 bg-zinc-900 flex flex-col rounded-xl animate-fade-in overflow-scroll-y">
+        <Card className="w-full max-w-[26rem] h-[34rem] shadow-xl border p-4 bg-zinc-900 flex flex-col rounded-xl animate-fade-in overflow-y-scroll mx-auto">
           <div className="flex flex-col justify-between p-2 ">
             <span className="font-semibold text-2xl flex justify-start pb-4">
               Hi There!
